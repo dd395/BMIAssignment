@@ -1,0 +1,31 @@
+body{
+    background-color: blue;
+    color: navajowhite;
+}
+
+table, th, td {
+    border: 2px solid black;
+    padding: 20px;
+    align-content: space-around;
+}
+
+th{
+    text-align: left;
+}
+
+h1{
+    font-style: italic;
+}
+
+
+h2{
+    font-size: medium;
+}
+
+#calcButton{
+    background-color: mediumvioletred;
+    color: lightgoldenrodyellow;
+    padding: 15px;
+
+}
+.error
