@@ -28,4 +28,6 @@ h2{
     padding: 15px;
 
 }
-.error
+label.error{
+    color:red;
+}

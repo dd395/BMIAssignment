@@ -17,6 +17,7 @@ $(document).ready(
                         digits: true
                     }
 
+
             };
 
         // Object containing the error messages
@@ -35,6 +36,7 @@ $(document).ready(
                         max: "too large",
                         digits: "Please enter your weight in pounds between 88 and 353."
                     }
+
             };
 
         // Pass the configuration to the form's validate() method
@@ -64,7 +66,6 @@ $(document).ready(
             var calculateHeight = parseFloat($("#numHeight").val());
 
 
-            //parse to numbers
 
             // do the math
 
@@ -72,25 +73,29 @@ $(document).ready(
             //Calculate BMI
 
 
-            var bmi = (calculateWeight * 703) / (calculateHeight * calculateHeight);
+            var calcBMI = (calculateWeight * 703) / (calculateHeight * calculateHeight);
 
             //put results in spans
 
 
             //show results
 
-            if (bmi <= 18.5) {
-               results.innerHTML = bmi.toFixed(1) + " - Underweight";
-            } else if (bmi <= 25) {
-               results.innerHTML = bmi.toFixed(1) + " - Healthy";
-            } else if (bmi <=30) {
-               results.innerHTML = bmi.toFixed(1) + " - Overweight";
-           } else {
-               results.innerHTML = bmi.toFixed(1) + " - Obese";
-           }
+            if (calcBMI <= 18.5) {
+                results.innerHTML = calcBMI.toFixed(1) + " - Underweight";
+            } else if (calcBMI <= 25) {
+                results.innerHTML = calcBMI.toFixed(1) + " - Healthy";
+            } else if (calcBMI <= 30) {
+                results.innerHTML = calcBMI.toFixed(1) + " - Overweight";
+            } else if (calcBMI <= 32) {
+                results.innerHTML = calcBMI.toFixed(1) + " - Obese";
+            } else {
+                results.innerHTML = " You must enter height and weight";
+            }
+
             return false;
+        }})
 
 
-        }
-        });
+
+
 
