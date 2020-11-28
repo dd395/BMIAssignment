@@ -82,11 +82,11 @@ $(document).ready(
 
             if (calcBMI <= 18.5) {
                 results.innerHTML = calcBMI.toFixed(1) + " - Underweight";
-            } else if (calcBMI <= 25) {
+            } else if (calcBMI <= 24.9) {
                 results.innerHTML = calcBMI.toFixed(1) + " - Healthy";
-            } else if (calcBMI <= 30) {
+            } else if (calcBMI <= 29.9) {
                 results.innerHTML = calcBMI.toFixed(1) + " - Overweight";
-            } else if (calcBMI <= 32) {
+            } else if (calcBMI >= 30) {
                 results.innerHTML = calcBMI.toFixed(1) + " - Obese";
             } else {
                 results.innerHTML = " You must enter height and weight";
